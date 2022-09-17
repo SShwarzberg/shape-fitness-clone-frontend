@@ -1,6 +1,6 @@
 import './homeHeading.scss'
 import featuredImage from '../../../assets/featured.png'
-import TrendingArticles from '../TrendingArticles/TrendingArticles'
+import TrendingArticles from './TrendingArticles/TrendingArticles'
 
 export default function HomeHeading() {
     return (
