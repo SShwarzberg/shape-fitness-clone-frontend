@@ -1,5 +1,5 @@
 import './trendingArticles.scss'
-import Articles from '../../../Articles/Articles'
+import Articles from '../../Articles/Articles'
 
 export default function TrendingArticles() {
     return (
