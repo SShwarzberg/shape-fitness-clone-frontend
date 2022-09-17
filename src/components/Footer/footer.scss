@@ -1,0 +1,89 @@
+.footer {
+    background-color: #f2f2f2;
+    padding: 50px 68px;
+    .footer-content {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-section-1 {
+            flex: 33%;
+            display: flex;
+            gap: 32px;
+            flex-direction: column;
+            @media screen and (max-width: 1200px) {
+                margin-bottom: 60px;
+                align-items: center;
+            }
+            .footer-newsletter {
+                width: 290px;
+                height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size: 0.875rem;
+                font-weight: 700;
+                border: 3px solid black;
+                transition: background-color, 0.1s ease-out;
+                background-color: white;
+                border-radius: 3px;
+                &:hover {
+                    background-color: #3e1517;
+                    border: 3px solid #3e1517;
+                    color: white;
+                }
+            }
+            .footer-socials {
+                .footer-socials-links {
+                    display: flex;
+                    gap: 16px;
+                    .footer-social-link {
+                        height: 40px;
+                        width: 40px;
+                        cursor: pointer;
+                        img {
+                            filter: invert(38%) sepia(0%) saturate(58%) hue-rotate(215deg) brightness(88%) contrast(88%);
+                            height: 20px;
+                            transition: filter 0.1s ease-out;
+                            &:hover {
+                                filter: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-section-2 {
+            width: 66%;
+            flex: 66%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            text-align: right;
+            @media screen and (max-width: 1200px) {
+                margin-bottom: 60px;
+                justify-content: center;
+            }
+            .general-footer-links {
+                gap: 12px;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                .general-footer-link {
+                    color: rgb(90, 90, 90);
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline black;
+                    }
+                }
+            }
+        }
+    }
+}
